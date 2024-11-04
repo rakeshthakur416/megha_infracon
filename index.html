@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Megha Infracon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        .navbar {
+            background-color: floralwhite;
+            font-style: normal;
+            font-family: "Calibri Light";
+        }
+
+        .nav-item {
+            font-size: larger;
+            align-items: end;
+            font-weight: bolder;
+            margin-right: 20px;
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 10px;
+            background-image: linear-gradient(135deg, #5a9ae8, #10ef56, #e8073b);
+            left: 0;
+            bottom: 0;
+            transition: width 0.5s;
+            border-radius: 5px;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .custom-underline {
+            display: inline-block;
+            position: relative;
+        }
+
+        .custom-underline::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px; /* Adjust distance from text */
+            width: 100%;
+            height: 3px; /* Adjust thickness */
+            background-image: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient colors */
+            border-radius: 5px; /* Rounded edges */
+        }
+    </style>
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#home-section">
+            <img src="img/logo.jpg" alt="Megha Infracon Logo" height="75" class="m-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+            <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home-section">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#our-products">Our Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services-section">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog-section">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br><br><br><br><br>
+
+<main class="container-fluid" id="home-section">
+    <!--Carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide mb-2">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded-2">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="img/tmt1.jpg" class="d-block w-100" height="600" alt="TMT IMAGE 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Reliable and Experienced</h1>
+                    <p>We are reliable and experienced steel supplier with a good market reputation.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="img/tmt2.jpg" class="d-block w-100" height="600" alt="TMT IMAGE 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Dealing in High Quality Products</h1>
+                    <p>We are providing high-quality industry steel products to our clients.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="img/tmt3.jpg" class="d-block w-100" height="600" alt="TMT IMAGE 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Third slide label</h1>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!--Products Section-->
+    <div class="container mb-5" id="our-products">
+        <div class="text-center pt-3">
+            <h1 class="text-secondary custom-underline" style="font-family: 'JetBrains Mono'">Our Products</h1>
+        </div>
+        <div class="row text-center pt-5">
+            <div class="col-lg-4">
+
+                <img src="img/tmt-bar.jpg" class="bd-placeholder-img rounded-circle mb-3" width="300" height="300">
+                <h2 class="fw-normal">TMT Bars</h2>
+                <p>TMT (Thermo-Mechanically Treated) bars are high-strength reinforcement bars that have a tough outer
+                    core and a soft inner core. They are commonly used in the construction industry, especially for
+                    building structures like residential, commercial, and infrastructure projects, due to their
+                    strength, durability, and flexibility.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="img/ms-angel.jpg" class="bd-placeholder-img rounded-circle mb-3" width="300" height="300">
+                <h2 class="fw-normal">MS Angle</h2>
+                <p>MS (Mild Steel) Angles are structural steel components used in various construction and fabrication
+                    applications. Known for their versatility and strength, MS Angles have an "L" shape with two legs,
+                    which gives them a good load-bearing capacity. They are made from mild steel, which provides
+                    durability and flexibility, making them suitable for a wide range of structural applications.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="img/ms-channels.png" class="bd-placeholder-img rounded-circle mb-3" width="300" height="300">
+                <h2 class="fw-normal">MS Channel</h2>
+                <p>MS (Mild Steel) Channels are structural steel components characterized by their C-shaped
+                    cross-section. They are widely used in construction and manufacturing due to their strength,
+                    versatility, and ease of fabrication. MS Channels are commonly used in a variety of applications
+                    where strong support and structural integrity are required.</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-lg-4">
+
+                <img src="img/ms-beams.png" class="bd-placeholder-img rounded-circle mb-3" width="300" height="300">
+                <h2 class="fw-normal">MS Beams</h2>
+                <p>MS (Mild Steel) Beams are structural steel components that are widely used in construction and
+                    engineering due to their strength, durability, and versatility. They have a cross-sectional shape
+                    that resembles an "I" or "H," and they are designed to support loads and resist bending or
+                    deformation. MS Beams are crucial in various applications, from building frames to bridges and other
+                    structures.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="img/ms-flat.jpg" class="bd-placeholder-img rounded-circle mb-3" width="300" height="300">
+                <h2 class="fw-normal">MS Flat</h2>
+                <p>MS (Mild Steel) Flats, also known as flat bars, are versatile steel products with a flat rectangular
+                    cross-section. They are widely used in various construction, fabrication, and manufacturing
+                    applications due to their strength, ease of handling, and adaptability. MS Flats come in different
+                    sizes and thicknesses, making them suitable for a wide range of uses.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="img/ms_round_bar.jpg" class="bd-placeholder-img rounded-circle mb-3" width="300" height="300">
+                <h2 class="fw-normal">MS Round Bars</h2>
+                <p>MS (Mild Steel) Round Bars, often referred to simply as round bars, are cylindrical steel rods that
+                    are widely used in construction and manufacturing. Known for their versatility, strength, and ease
+                    of fabrication, MS Round Bars have numerous applications in various industries.</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <img src="img/ms_square_bar.jpg" class="bd-placeholder-img rounded-circle mb-3" width="300"
+                     height="300">
+                <h2 class="fw-normal">MS Square Bars</h2>
+                <p>MS (Mild Steel) Square Bars are steel products with a square cross-section. They are known for their
+                    versatility and strength, making them widely used in construction, manufacturing, and various
+                    engineering applications. MS Square Bars come in different sizes </p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="img/wire_rod.jpg" class="bd-placeholder-img rounded-circle mb-3" width="300" height="300">
+                <h2 class="fw-normal">Wire Rod</h2>
+                <p>Wire Rod is a long, thin, rolled steel product that is used primarily as a raw material for producing
+                    wire and various other steel products. It is produced in a wide range of diameters and can be made
+                    from different grades of steel, including mild steel, carbon steel, and alloy steel. Wire Rod is
+                    characterized by its versatility and strength, making it essential in various industrial
+                    applications.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="img/binding_wire.jpg" class="bd-placeholder-img rounded-circle mb-3" width="300" height="300">
+                <h2 class="fw-normal">Binding Wire</h2>
+                <p>Binding Wire, often referred to as binding wire or construction wire, is a type of mild steel wire
+                    commonly used in construction, agriculture, and various industrial applications. It is known for its
+                    flexibility, strength, and ease of use, making it a preferred choice for tying, binding, and
+                    securing materials together.</p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!--About Us Section-->
+        <div class="container mb-5" id="about-section">
+            <div class="text-center pt-3 pb-5">
+                <h1 class="text-secondary custom-underline" style="font-family: 'JetBrains Mono'">About Us</h1>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1 pb-3">Welcome to Megha Infracon</h2>
+                    <p class="lead">We are Megha Infracon, a leading steel supplier company. With 4+ years of
+                        experience, we provide the highest quality steel products at the lowest price. You can choose
+                        any of the categories and get instant delivery for bulk purchases.<br> We take pride in having
+                        an unbeatable inventory of steel, which has allowed us to retain cost-effectiveness while
+                        providing a bulk supply of steel. We are a business with a committed workforce that includes the
+                        appropriate people, quality, inventory, vendor relationships, locations, and the ability to
+                        complete the task successfully.<br> Established in 2017, MEGHA INFRACON is a prominent stockist
+                        of steel, pipes, and ironware materials in Guwahati, Assam. Situated in the convenient location
+                        of Opposite Sony Center Next To Central Mall, MEGHA INFRACON is a reliable source for a
+                        comprehensive range of steel products, catering to the needs of residential, commercial, and
+                        industrial projects throughout the region. The company is committed to offering high-quality
+                        products and exceptional customer service, making it a trusted partner for architects,
+                        engineers, contractors, and individuals engaged in construction projects. Trading in TMT Bars,
+                        Coils, MS Angle, Channel, MS Pipe. We are involved in the Trading of TMT bars all over the 7
+                        sisters of North East India.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/tmt-bar.jpg"
+                         class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5"
+                         width="500" height="500">
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!--Services-->
+        <div class="container" id="services-section">
+            <div class="text-center pt-3 pb-5">
+                <h1 class="text-secondary custom-underline" style="font-family: 'JetBrains Mono'">Services</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <i class="fa-solid fa-indian-rupee-sign d-block mb-3 display-3 text-secondary"></i>
+                    <h3 class="text-secondary h4 mb-2">Best Price</h3>
+                    <p>"We offer competitive prices on TMT bars, ensuring you get the best value for your construction
+                        project."</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <i class="fa-solid fa-handshake d-block mb-3 display-3 text-secondary"></i>
+                    <h3 class="text-secondary h4 mb-2">Mutual Relationship</h3>
+                    <p>"A successful long-term relationship requires open communication, mutual respect, and a
+                        commitment to growth."</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <i class="fa-solid fa-arrow-trend-up d-block mb-3 display-3 text-secondary"></i>
+                    <h3 class="text-secondary h4 mb-2">Growth Oriented Approach</h3>
+                    <p>We believe to grow along with our customers and deliver high quality products that impact the
+                        growth of our client as well as us.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <i class="fa-solid fa-chart-simple d-block mb-3 display-3 text-secondary"></i>
+                    <h3 class="text-secondary h4 mb-2">Business Analytics</h3>
+                    <p>We use business analytics to leverage data-driven insights to improve decision-making and drive
+                        innovation. We are also adapting to rapid market changes, and maximizing growth
+                        opportunities.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!--Contact Us-->
+        <div class="container" id="contact-section">
+            <div class="text-center pt-3 pb-5">
+                <h1 class="text-secondary custom-underline" style="font-family: 'JetBrains Mono'"><span
+                        style="font-family: 'Calibri Light'; font-size: small;" class="pb-3">GET IN TOUCH</span><br>Contact
+                    Us</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <form action="#" method="post">
+                        <div class="form-group row">
+                            <div class="col-md-6 mb-3">
+                                <input id="first-name" name="first-name" type="text" class="form-control"
+                                       placeholder="First name">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input name="last-name" id="last-name" type="text" class="form-control"
+                                       placeholder="Last name">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12 mb-3">
+                                <input name="email-address" id="email-address" type="text" class="form-control"
+                                       placeholder="Email address">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12 mb-3">
+                                <input name="contact-number" id="contact-number" type="text" class="form-control"
+                                       placeholder="Contact Number">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12 mb-3">
+                                <textarea name="message" id="message" class="form-control"
+                                          placeholder="Write your message." cols="30"
+                                          rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <input type="submit" class="btn btn-outline-primary text-primary w-100 p-3"
+                                       value="Send Message" name="send-message" id="send-message">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div id="map"></div>
+                </div>
+            </div>
+            <div class="row text-center ml-auto pt-5">
+                <h2 class="text-secondary" style="font-family: 'JetBrains Mono'">Need to know more on details? Call Us
+                    <a href="tel://8258009997"><i class="fa-solid fa-phone text-secondary"></i>+91 82580 09997</a></h2>
+                <p class="text-secondary">We are operational 24*7 for your help and support.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 pt-4 border-top">
+        <p class="col-md-6 mb-0 text-body-secondary">&copy; <span id="year" style="font-style: italic"></span> Megha
+            Infracon. Designed and Developed by Rakesh Thakur</p>
+
+        <ul class="nav col-md-6 justify-content-end">
+            <li class="nav-item"><a href="#home-section" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#our-products" class="nav-link px-2 text-body-secondary">Our Products</a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link px-2 text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="#services-section" class="nav-link px-2 text-body-secondary">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Blog</a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link px-2 text-body-secondary">Contact Us</a>
+            </li>
+        </ul>
+    </footer>
+</main>
+
+
+<script>
+    let lat = 26.157567;
+    let long = 91.777867;
+    document.getElementById("map").innerHTML = '<iframe width="100%" height="500" class="rounded-3" src="https://maps.google.com/maps?q=' + lat + ',' + long + '&amp;z=20&amp;output=embed"></iframe>';
+    document.getElementById("year").innerText = new Date().getFullYear();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
